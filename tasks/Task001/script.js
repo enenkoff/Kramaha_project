@@ -3,7 +3,7 @@
 function firstDuplicate(a) {
     var num;
 
-    /*test script 1*/
+    /*test script 2*/
 
     return num;
 }
