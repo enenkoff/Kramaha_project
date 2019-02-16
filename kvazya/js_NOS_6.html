@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+    var sequence = [1, 2, 95, 3];
+    function almostIncreasingSequence(sequence) {
+        var isIncreasing;
+        for (var i = 0; i<sequence.length-1; i++) {
+            if ( sequence[i] - sequence[i+1] !== -1 ) {
+                var ind = sequence.indexOf(sequence[i+1]);
+                sequence.splice(ind,1);
+                break;
+			}
+		}
+        for (var i = 0; i<sequence.length-1; i++) {
+            isIncreasing = ( sequence[i] - sequence[i+1] !== -1 ) ? false : true;
+        }
+        return isIncreasing;
+    }
+    almostIncreasingSequence(sequence);
+</script>
+</body>
+</html>
