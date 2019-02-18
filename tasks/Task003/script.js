@@ -8,6 +8,6 @@ function isValidWalk(walk) {
     return timely;
 }
 
-let data = [N, E, N, E, S, W, S, S, W, N];
+let data = ['N','E','N','E','S','W','S','S','W','N'];
 
 document.getElementById('app').innerHTML = isValidWalk(data);
